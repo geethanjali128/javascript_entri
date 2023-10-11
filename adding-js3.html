@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adding js</title>
+</head>
+<body id="body">
+    <h2 id="heading">hello world</h2>
+    <h3 class="data">hii</h3>
+    <p class="data">this is geethanjali</p>
+    <h4>good morning</h4>
+    <h4>good afternoon</h4>
+    <h4>good night</h4>
+    <p id="java">javascript</p>
+    <img src="" alt="shinchan image" id="image">
+    
+    <script>
+        // accesing html elemnts by id using "document.GetElementById"
+        let a=document.getElementById("heading")
+        alert(a)
+        a.innerHTML="welcome world"+" "+"NAMSTHE!"
+         // accesing html elemnts by class Name using "document.GetElementsByClassName"
+        let b=document.getElementsByClassName("data")
+        alert(b)
+         // accesing html elemnts by tag using "document.GetElemenByTagName"
+        let c=document.getElementsByTagName("h4")
+        alert(c[2])
+        // changing html element content using .innerHTML
+        document.getElementById("java").innerHTML="java"
+        // chanigin html elements attributes content using ".ATTRIBUTE NAME"
+        document.getElementById("image").alt="shinchan"
+        document.getElementById("image").src="shinchan.jpeg"
+        // document.write()
+        document.write("python")
+        // css manipulation
+        a.style.backgroundColor="purple"
+        document.getElementById("body").style.backgroundColor="lime"
+        document.getElementById("java").style.border="dotted"
+
+
+
+       
+      
+        
+    </script>
+    
+</body>
+</html>
