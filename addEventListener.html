@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addEventListener</title>
+</head>
+<body>
+    <p id="para" onmouseover="change()" >i am karra geethanjali.</p>
+    <script>
+        let a=document.getElementById("para")
+        a.addEventListener('onmouseover',change)
+        function change(){
+            a.style.backgroundColor="red"
+            a.innerHTML="i am from Avanigadda"
+        }
+    </script>
+</body>
+</html>
