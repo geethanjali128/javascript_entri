@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+</head>
+<body>
+ <input type="submit" id="abc" name="submit" onclick="change()">
+ <p id="p"></p>
+ <input type="submit" id="abc1" name="submit" >
+ <p id="p1"></p>
+ <input type="submit" id="abc2" name="submit">
+ <p id="p2"></p>
+ <script>
+    // inline events
+    function change(){
+       let a= document.getElementById("p")
+       a.innerHTML=a.innerHTML+  "welcome"
+      }
+       //  events properties
+      let b= document.getElementById("abc1")
+       b.ondblclick=change1
+      function change1(){
+        b.style.backgroundColor="pink"
+        let ele=document.getElementById("p1")
+        ele.innerHTML=ele.innerHTML +"hello"
+        ele.style.color="yellow"
+
+      }
+    //   addEventListener
+      let c=document.getElementById("abc2")
+      c.addEventListener('click',change2)
+      function change2(){
+        c.style.backgroundColor="lime"
+        let ele1=document.getElementById("p2")
+        ele1.innerHTML= ele1.innerHTML +" hiii"
+        ele1.style.color="blue"
+
+      }
+
+  </script>
+</body>
+</html>
