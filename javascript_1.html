@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    
+</head>
+<body>
+    <h3 id="main">welcome!</h3>
+    <p class="para">this is my webpage</p>
+    <p class="para">i created this website using html</p>
+    <p class="para"> i created this  website using html and css</p>
+    <p class="para">i created this website using html ,css and javascript</p>
+     <img src="../javascript_entri/BTS.jpg" alt="BTS-image" id="image"><br>
+     
+     <script>
+        // getElementById("")
+        alert(document.getElementById("main"))
+        const a=document.getElementById("main").innerHTML="good morning"
+        console.log(a)
+        // getElementsByClassName("")
+        let b=document.getElementsByClassName("para")
+       alert(b[2])
+        alert(b)
+        // innerHTML=""
+       let c= b[0].innerHTML="welcome to my page"
+        console.log(c)
+        // attribute manipulation
+       let d=document.getElementById("image").src="../javascript_entri/shinchan.jpeg"
+       console.log(d)
+       let e=document.getElementById("image").alt="shinchan image"
+       console.log(d)
+    //    document.write()
+     document.write("bye")
+       
+       
+
+    </script> 
+  
+    
+</body>
+</html>
