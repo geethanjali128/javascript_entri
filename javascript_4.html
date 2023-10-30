@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    <h3  id=h1 onmouseover="ev()">hello world</h3>
+    <button  id=a1 onclick="ev1()" >click here1</button>
+    <p id="p1"></p><hr>
+    <button  id=a2  >click here2</button>
+    <p id="p2"></p><hr>
+    <button id=a3 >click here3</button>
+    <p id="p3"></p>
+    <script>
+        // inline events
+        function ev(){
+            let a=document.getElementById("h1")
+            a.style.backgroundColor="lime"
+            
+        }
+        // function ev1(){
+        //     let d=document.getElementById("a1")
+        //     d.style.backgroundColor="yellow"
+        //    let c=document.getElementById("p1")
+        //     c.innerHTML= c.innerHTML+" welcome!"
+        //     c.style.color="blue" }
+            // event preoperties  inline event rayanavasaram ledu
+        let abc=document.getElementById("a1")
+           abc.onclick=function(){abc.style.backgroundColor="yellow"
+            let abc1=document.getElementById("p1")
+            abc1.innerHTML=abc1.innerHTML+" welcome!"
+            abc1.style.color="purple"
+        }
+        let abc2=document.getElementById("a2")
+            abc2.onclick=ev2
+        function ev2(){
+            abc2.style.backgroundColor="teal"
+            let abc3=document.getElementById("p2")
+            abc3.innerHTML=abc3.innerHTML+" bye!"
+            abc3.style.color="blue"
+        }
+        // addEventListener('eventname without on',function name)
+        let btn=document.getElementById("a3")
+        btn.addEventListener('click',element)
+        function element(){
+            btn.style.backgroundColor="pink"
+            let btn1=document.getElementById("p3")
+            btn1.innerHTML=btn1.innerHTML+" hii!"
+            btn1.style.color="red"
+        }
+        
+
+    </script>
+    
+</body>
+</html>
