@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+</head>
+<body id="body">
+    <form id="form">
+    <input type="text" id="input" placeholder="add text" >
+    <input type="submit" id="s1">
+    <input type="reset">
+</form><br>
+<img src="BTS.jpg" alt="bts_image" onload="image_load()" onerror="image_error()">
+   
+    <p id="p"></p>
+    <button id="btn" onclick="document.body.style.backgroundColor='pink'">click</button><br><br>
+    <button id="btn1" onclick="change()">click1</button><br>
+    <p id="para"></p>
+    <button id="btn2">click2</button>
+    <p id="para1"></p>
+    <script>
+        const change=()=>{
+        let a=document.getElementById("para")
+        a.innerHTML=a.innerHTML+" "+"hello"
+        a.style.color="purple"
+    }
+    let b=document.getElementById("btn2")
+    b.onclick=function(){
+        document.getElementById("para1").innerHTML=document.getElementById("para1").innerHTML+" "+"hii"
+    }
+    let c=document.getElementById("body")
+    c.addEventListener('mouseover',function(){
+        c.style.backgroundColor="lime"
+        
+    })
+    c.addEventListener("mouseout",function(){
+        c.style.backgroundColor="white"
+    })
+   let d=document.getElementById("input")
+   d.addEventListener("focus",function(){
+        d.style.color="red"
+        d.style.backgroundColor="skyblue"
+   })
+   d.addEventListener("blur",function(){
+        d.style.color="brown"
+        d.style.backgroundColor="yellow"
+   })
+    d.addEventListener("change",function(){
+        d.style.fontSize="25px"
+    })
+    let e=document.getElementById("form")
+    e.addEventListener("submit",function(){
+        alert("submitted successfully")
+    })
+    e.addEventListener('reset',function(){
+        alert("are you sure to reset this form?")
+    })
+    function image_load(){
+        alert("image loaded properly")
+    }
+    function image_error(){
+        alert("image not loaded properly")
+    }
+    
+    
+    </script>
+    
+</body>
+</html>
