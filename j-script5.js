@@ -1,0 +1,31 @@
+// array methods
+const fruits=["apple","orange","pear","kiwi"]
+console.log(fruits)
+let size=fruits.length
+console.log(size)
+let str=fruits.toString()
+console.log(str)
+let join=fruits.join("-")
+console.log(join)
+let join1=fruits.join("/")
+console.log(join1)
+delete fruits[2]
+console.log(fruits)
+fruits.pop()
+console.log(fruits)
+fruits.push("mango")
+console.log(fruits)
+fruits.shift()
+console.log(fruits)
+fruits.unshift("apple")
+console.log(fruits)
+const flowers=['rose','tulips','jasmine','lotus','sunflower']
+console.log(fruits.concat(flowers))
+console.log(fruits.concat("avacado"))
+fruits.splice(0,1)
+console.log(fruits)
+fruits.splice(0,0,"apple")
+console.log(fruits)
+console.log(flowers.slice(1))
+console.log(flowers.slice(1,3))
+console.log(flowers.slice(0,2))
