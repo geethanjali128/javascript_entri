@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+</head>
+<body>
+    <div>
+        <h3 id="head">type text here</h3>
+        <input type="text" 
+        id="in1"/><br>
+        <!-- <button id="b1" onclick="document.getElementById('head').style.color='red'">click</button> -->
+        <!-- <button id="b1" onclick="change()">click</button> -->
+        <button id="b1">click</button>
+    </div>
+    <script>
+        // function change(){
+        // const btn=document.getElementById("head")
+        // btn.style.backgroundColor='skyblue'
+        // }
+
+        const btn = document.getElementById("b1")
+        // btn.onclick=change
+        // btn.onclick=function(){
+        //     document.getElementById("head").style.backgroundColor = "lime"
+        // }
+
+        // function change() {
+        //         document.getElementById("head").style.backgroundColor="lime"
+                
+        //     }
+
+        btn.addEventListener('click',function(){
+             document.getElementById("head").style.backgroundColor = "lime"
+        })
+    </script>
+
+    
+</body>
+</html>
