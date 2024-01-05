@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementById</title>
+</head>
+<body>
+    <h2 id="main">welcome </h2>
+    <h2 id="main1">2024</h2>
+    <h4 class="next">hello</h4>
+    <!-- <p class="next">i am geethanjali</p> -->
+    <p>this is a para1</p>
+    <p>this is a para2</p>
+    <p>this is a para3</p>
+    <img src="shinchan.jpeg" alt="shinchan-image" id="image">
+    <script>
+    //    alert(document.getElementById("main"))
+    //    alert(document.getElementById("main1"))
+    //    const a= document.getElementsByClassName("next")
+    //    alert(a)
+    //    alert(a[0])
+    //    alert(a[1])
+       const b=document.getElementsByTagName('p')
+    //    alert(b)
+    //    alert(b[0])
+    
+    const c=document.getElementById("main").innerText="bye!"
+    // document.getElementById('image').alt="bts image"
+    // document.getElementById('image').src="BTS.jpg"
+    const d= document.getElementById('image')
+    d.src="BTS.jpg"
+    document.write("javascript")
+        document.getElementById("main1").style.color="purple"
+         document.getElementById("main1").style.border="solid"
+         document.getElementById("main1").style.backgroundColor="blue"
+    </script>
+    
+</body>
+</html>
